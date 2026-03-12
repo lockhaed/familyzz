@@ -11,16 +11,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
+        padding: 0;
       }
       .menu {
         width: 100%;
-        max-width: 800px;
+        max-width: 1400px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-start;
       }
-      img { width: 100%; display: block; }
-      img:last-child { margin-top: -15%; }
+      img { width: 50%; display: block; }
+
+      @media (max-width: 768px) {
+        .menu { flex-direction: column; }
+        img { width: 100%; }
+        img:last-child { margin-top: -15%; }
+      }
     </style>
   </head>
   <body>
