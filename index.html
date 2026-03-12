@@ -7,18 +7,26 @@
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       body {
-        background: #111;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
         padding: 1rem;
       }
-      img { width: 100%; max-width: 800px; }
+      .menu {
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+      }
+      img { width: 100%; display: block; }
+      img:last-child { margin-top: -15%; }
     </style>
   </head>
   <body>
-    <img src="assets/page1.png" alt="Menu Family'ZZ — page 1" />
-    <img src="assets/page2.png" alt="Menu Family'ZZ — page 2" />
+    <div class="menu">
+      <img src="assets/page1.png" alt="Menu Family'ZZ — page 1" />
+      <img src="assets/page2.png" alt="Menu Family'ZZ — page 2" />
+    </div>
   </body>
 </html>
